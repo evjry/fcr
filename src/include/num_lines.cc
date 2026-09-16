@@ -3,7 +3,6 @@
 
 #include "num_lines.h"
 
-//Number all output lines.
 void num_print(int fd){
     char buffer[4096];
     int line = 1;

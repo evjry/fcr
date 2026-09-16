@@ -3,7 +3,6 @@
 
 #include "blank_lines.h"
 
-//Number all nonempty output lines.
 void blank_print(int fd){
     char buffer[4096];
     int line = 1;
@@ -15,7 +14,6 @@ void blank_print(int fd){
         for (int _char = 0; _char < bytes_read; ++_char){
             if (start_of_line){
                 if (buffer[_char] == '\n'){
-                    //Empty
                 } else {
                     char line_num[20];
                     int length = snprintf(line_num, sizeof(line_num), "%d", line);
