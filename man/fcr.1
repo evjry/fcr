@@ -4,20 +4,23 @@
 fcr \- concatenate files and print on the standart output.
 
 .SH SYNOPSIS
-.b fcr
-.RI [OPTION] [-n] [-b]
+.RI fcr [OPTION]
 
 .SH DESCRIPTION
 concatenate files and print on the standart output.
 
 .SH OPTIONS
 .TP
-.BR \-n ", " \-\-number
+.BR \-n
 Number all output lines.
 
 .TP
-.BR \-b ", " \-\-number\-nonblank
+.BR \-b
 Number only nonempty output lines.
+
+.TP
+.BR \-e
+Show end of each line by printing $ sign
 
 .SH AUTHOR
 Written as C++ implementation of the Linux cat command.
